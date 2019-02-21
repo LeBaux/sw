@@ -50,7 +50,7 @@ fi
 if [[ $USE_GNU_DATE == "0" ]]; then
     DATE_INPUT="--date now-${START_TIME}sec"
 else
-    DATE_INPUT="-v-${START_TIME}S"
+    DATE_INPUT="-${START_TIME}S"
 fi
 
 while [ true ]; do
