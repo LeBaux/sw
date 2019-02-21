@@ -48,9 +48,9 @@ fi
 
 # GNU date accepts the input date differently than BSD
 if [[ $USE_GNU_DATE == "0" ]]; then
-    DATE_INPUT="--date now-${START_TIME}sec"
+    DATE_INPUT="${START_TIME}sec"
 else
-    DATE_INPUT="-${START_TIME}S"
+    DATE_INPUT="${START_TIME}S"
 fi
 
 while [ true ]; do
